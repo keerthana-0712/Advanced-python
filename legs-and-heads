@@ -1,0 +1,36 @@
+'''
+A poultry farm has group of hens and cows...
+need to find num of cows and hens separately,
+if total legs and total heads together given:
+  testcase1 legs: 16
+            heads: 6
+            cows=2
+            hens=4
+  testcase2 legs:7
+            heads: 3
+            output: no solution
+
+methods: trial error method / assumption method / boolean method
+'''
+legs=int(input("enter num of legs: "))
+heads=int(input("enter num of heads: "))
+flag=False
+for cows in range(0,heads+1):
+  hens=heads-cows
+  calculate_legs=cows*4 + hens*2
+  if calculate_legs==legs:
+    flag=True
+    break
+if flag:
+  print("num of cows: ",cows)
+  print("num of hens: ",hens)
+else:
+  print("no solution")
+
+'''
+output:
+enter num of legs: 12
+enter num of heads: 4
+num of cows:  2
+num of hens:  2
+'''
