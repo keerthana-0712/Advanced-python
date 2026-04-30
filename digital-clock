@@ -4,6 +4,7 @@ import sys
 h=1
 m=2
 s=0
+print("\033[1;31m")
 while True:
     sys.stdout.write("\r{:02d} : {:02d} : {:02d}".format(h,m,s))
     sys.stdout.flush()
