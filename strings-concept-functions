@@ -1,0 +1,131 @@
+#STRINGS
+a="I love ace"
+print(a[2:5])
+print(a[2:])
+print(a[2::-1])
+
+
+#in built function
+a="I love ace"
+a.upper()
+
+
+#in built function
+a="I love ace"
+b=a.upper()
+print(b)
+
+
+#in built function
+a="I love ace"
+b=a.upper()
+c=a.swapcase()
+print(c)
+
+
+#in built function
+a="I love ace and vbit"
+d=a.title()
+print(d)
+
+
+#in built function
+a="I love ace and vbit"
+d=a.title()
+e=a.capitalize()
+print(e)
+
+
+a="I love ace and vbit"
+e=a.find("love")
+print(e)
+
+
+#find
+a="I love ace and vbit"
+e=a.find("loved")
+print(e)
+
+
+#count
+a="I love ace and vbit"
+f=a.count("i")
+print(f)
+
+
+a="P"
+b=a.isupper()
+print(b)
+
+
+a="p"
+b=a.islower()
+print(b)
+
+
+a="4"
+b=a.isdigit()
+print(b)
+
+
+a="7"
+b=a.isdigit()
+c=a.isalpha()
+print(b)
+print(c)
+
+
+a="I"
+b=a.isdigit()
+c=a.isalpha()
+print(b)
+print(c)
+
+
+a="7"
+b=a.isdigit()
+c=a.isalpha()
+d=a.isalnum() #alphabetic + numeric
+print(b)
+print(c)
+print(d)
+
+
+a="TVK is good"
+b=a.split()
+print(b)
+
+
+a="TVK is good and mass and cool"
+b=a.split("and")
+print(b)
+
+
+#join
+a="KEERTHANA SALLA is from HYDERABAD and good"
+b=" ".join(a)
+print(b)
+
+
+#join
+a="KEERTHANA SALLA is from HYDERABAD and good"
+b=" ".join(i for i in a if i in "AEIOU")
+print(b)
+
+
+#join
+a="KEERTHANA SALLA is from HYDERABAD and good"
+b=" ".join("cute" for i in a if i in "AEIOU")
+print(b)
+
+
+#sort
+a="KEERTHANA SALLA is from HYDERABAD and good"
+b=sorted(a)
+print(b)
+
+
+#sort
+a="khcdgfywfhdxbjwdfutdeiugd hiygeicb"
+b=sorted(a,reverse=True)
+print(b)
