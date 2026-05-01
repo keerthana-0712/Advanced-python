@@ -1,0 +1,21 @@
+names=["Keerthana","Abhilaasha","Tejasri","Sahithi","Manu"]
+marks=[[30,40,50],[66,77,55],[33,78,90],[87,97,57],[47,88,44]]
+pos=1
+for i in range(5):
+  sum=0
+  for j in marks[i]:
+    sum+=j
+    avg=sum//3
+  if avg>80:
+    print("Mr/Mrs {}.{} has scored {}% - S Grade".format(pos,names[i],avg))
+    pos=pos+1
+  elif avg<=40:
+    print("Mr/Mrs {}.{} has scored {}% - F Grade".format(pos,names[i],avg))
+    pos=pos+1
+  elif avg>=42 and avg<=50:
+    print("Mr/Mrs {}.{} has scored {}% - B Grade".format(pos,names[i],avg))
+    pos=pos+1
+  else:
+    print("Mr/Mrs {}.{} has scored {}% - A Grade".format(pos,names[i],avg))
+    pos=pos+1
+    
