@@ -1,0 +1,9 @@
+Maths=['Tom','Jerry','Spike','Tyke']
+Political=['Jerry','Spike','Butch','Nibbles']
+Science=['Spike','Tyke','Nibbles','Quacker']
+a=set(Maths)
+b=set(Political)
+c=set(Science)
+print(a&b&c)
+print((a&b | b&c | a&c)-(a&b&c))
+print((a^b^c)-(a&b&c))
