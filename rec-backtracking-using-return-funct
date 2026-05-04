@@ -1,0 +1,10 @@
+def keer(a):
+  if a == 5:
+    return 1
+
+  B = keer(a+1)
+  print("hoii")
+  return B+2
+
+res=keer(1)
+print(res)
