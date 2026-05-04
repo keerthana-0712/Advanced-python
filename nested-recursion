@@ -1,0 +1,8 @@
+def keer(a):
+  if a ==1:
+    return
+  a -= 1
+  keer(a)
+  print("hoii")
+  keer(a)
+keer(5)
